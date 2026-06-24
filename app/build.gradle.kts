@@ -31,10 +31,14 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.6.11"
     }
-    compilerOptions {
+    compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+}
+
+kotlin {
+    jvmToolchain(11)
 }
 
 dependencies {
